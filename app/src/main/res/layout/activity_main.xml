@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="#BC9FBC"
     tools:context=".MainActivity">
 
     <TextView
@@ -16,15 +17,23 @@
         android:textSize="28sp"
         android:textStyle="bold"
         android:layout_marginBottom="30dp" />
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/user"
+        android:layout_gravity="center"
+        android:contentDescription="Imagen Usuario"/>
     <Button
         android:id="@+id/formulario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Formulario" />
     <Button
-        android:id="@+id/dashboard"
+        android:id="@+id/salir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dashboard" />
+        android:text="Salir" />
 
 </LinearLayout>

@@ -43,6 +43,15 @@ class FormularioActivity : AppCompatActivity() {
         }
         val telefono = findViewById<EditText>(R.id.telefono)
         val direccion = findViewById<EditText>(R.id.direccion)
+        val botonLimpiar = findViewById<Button>(R.id.limpiar)
+        botonLimpiar.setOnClickListener {
+            nombre.text.clear()
+            edad.text.clear()
+            email.text.clear()
+            fechaNacimiento.text.clear()
+            telefono.text.clear()
+            direccion.text.clear()
+        }
 
         val botonEnviar = findViewById<Button>(R.id.enviar)
         botonEnviar.setOnClickListener {

@@ -18,6 +18,12 @@ class MainActivity : AppCompatActivity() {
         botonFormulario.setOnClickListener {
         val intent = Intent(this, FormularioActivity::class.java)
             startActivity(intent)
+
+            val botonSalir = findViewById<Button>(R.id.salir)
+            botonSalir.setOnClickListener {
+                finishAffinity()
+
+            }
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
